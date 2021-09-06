@@ -1,0 +1,17 @@
+<!--navigation-------------->
+<nav>
+  <!--logo--------------->
+  <a [routerLink]="['/home']" class="logo app-clickable">
+    <img src="../../../assets/images/MovieArena Logo.JPG" />
+  </a>
+
+  <!--search------------->
+
+  <form (submit)="submitHandler($event)">
+    <div class="search">
+      <input type="text" placeholder="Find Movies" name="queryTerm" autofocus="autofocus" [(ngModel)]="queryTerm" />
+      <!--search-icon----------->
+      <i class="fas fa-search"></i>
+    </div>
+  </form>
+</nav>
